@@ -6,7 +6,7 @@
     --dark: #21252f;
     --body:  #888;
     --white: #ffffff;
-    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.3);
 }
 
 body {
@@ -30,12 +30,17 @@ img {
     width: 100%;
 }
 
+.text{
+    color:var(--primary)
+}
+
 .navbar {
     box-shadow: var(--box-shadow);
+    background-color: rgba(2, 89, 81, 0.5);
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     padding: 14px 18px;
 
 }
@@ -79,6 +84,20 @@ img {
 section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.paragraph {
+    white-space: nowrap;
+    line-height:1.2em;
+    height:100%;
+    overflow:hidden;
+    text-overflow: ellipsis;   
+      
+}
+.paragraph:hover {
+    white-space: normal; 
+    overflow: visible;
+    width: 100%; 
 }
 
 .card-effect {
@@ -231,6 +250,11 @@ form .form-control {
     border: transparent;
     border-radius: 0;
     background-color: rgba(0,0,0,0.02);
+}
+.form{
+    background-color: rgba(0,0,0,0.02);
+
+
 }
 
 
